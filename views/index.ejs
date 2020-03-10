@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+
+
+    <div class="ui main text container">
+        <div class="ui huge header">Address book</div>
+        <a href="/adressen/asc"><i class="sort alphabet down icon"></i></a>
+        <a href="/adressen/desc"><i class="sort alphabet up icon"></i></a>
+        
+
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% adressen.forEach(function(adres){ %>
+                    <div class="item">
+
+                            <div class="content">
+                                <a class="header" href="/adressen/<%= adres._id %>"><i class="address card outline icon"></i><%=adres.firstname%></a>
+                                <a class="header"><%=adres.lastname%></a>
+                                <div class="meta">
+                                    
+                                </div>
+                                    <div class="description">
+                                        
+                                    </div>
+                                    <div class="extra">
+                                        <a class="ui blue basic button" href="/adressen/<%= adres._id %>">
+                                            Details
+                                        <i class="zoom in icon"></i>
+                                        </a>
+                                    </div>
+                            </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,23 @@
+.background {
+    background-image: url("backgroud.jpeg");
+  }
+
+.embleem  {
+    font-size: 2em;
+}
+.container.main {
+    margin-top: 7.0em;
+}
+
+#delete {
+    display: inline;
+}
+.toegevoegd {
+
+    color: rgb(0, 7, 130);
+    font-size: 10px;
+}
+
+i.icon {
+    font-size: 1em;
+}

@@ -1,0 +1,39 @@
+
+
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit address</div>
+    <form class="ui form" action="/adressen/<%= adres._id %>?_method=PUT"" method="POST">
+        <div class="field">
+            <label>FirstName</label>
+            <input type="text" name="adres[firstname]" value="<%=adres.firstname %>"> 
+        </div>
+        <div class="field">
+            <label>Lastname</label>
+            <input type="text" name="adres[lastname]" value="<%=adres.lastname %>"> 
+        </div>
+        <div class="field">
+            <label>Street</label>
+            <input type="text" name="adres[street]" value="<%=adres.street %>"> 
+
+
+        <div class="field">
+            <label>Place</label>
+            <input type="text" name="adres[place]" value="<%=adres.place %>"> 
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="adres[email]" value="<%=adres.email %>"> 
+        </div>
+        <div class="field">
+            <label>Website</label>
+            <input type="text" name="adres[website]" value="<%=adres.website %>"> 
+        </div>
+
+        </div>
+
+        <a class="ui blue basic button" href="/adressen/<%= adres._id %>">Back</a>
+        <input class="ui violet basic button right floated" type="submit" value="Save">
+    </form>
+</div>
+<%- include("partials/footer") %>

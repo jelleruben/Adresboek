@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+    <div class="ui huge header">New address</div>
+    <form class="ui form" action="/adressen" method="POST">
+        <div class="field">
+            <label>FirstName</label>
+            <input type="text" name="adres[firstname]" placeholder="firstname"> 
+        </div>
+        <div class="field">
+            <label>Lastname</label>
+            <input type="text" name="adres[lastname]" placeholder="lastname"> 
+        </div>
+        <div class="field">
+            <label>Street</label>
+            <input type="text" name="adres[street]" placeholder="street"> 
+
+
+        <div class="field">
+            <label>Place</label>
+            <input type="text" name="adres[place]" style="text-transform:uppercase" placeholder="place"> 
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="adres[email]" placeholder="email"> 
+        </div>
+        <div class="field">
+            <label>Website</label>
+            <input type="text" name="adres[website]" placeholder="website"> 
+        </div>
+
+        </div>
+
+        <a class="ui blue basic button" href="/adressen/">Back</a>
+        <input class="ui violet basic button right floated" type="submit" value="Save">
+    </form>
+</div>
+<%- include("partials/footer") %>
